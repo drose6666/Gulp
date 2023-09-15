@@ -1,0 +1,53 @@
+/* TODO Axiforma */
+
+@font-face {
+   font-family: 'Axiforma';
+   src: url('../fonts/Axiforma/Axiforma-Light.eot');
+   src: local('Axiforma'), local('Axiforma-Light'),
+      url('../fonts/Axiforma/Axiforma-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Axiforma/Axiforma-Light.woff') format('woff'),
+		url('../fonts/Axiforma/Axiforma-Light.woff2') format('woff2'),
+      url('../fonts/Axiforma/Axiforma-Light.ttf') format('truetype');
+   font-weight: 300;
+   font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+   font-family: 'Axiforma';
+   src: url('../fonts/Axiforma/Axiforma-Regular.eot');
+   src: local('Axiforma'), local('Axiforma-Regular'),
+      url('../fonts/Axiforma/Axiforma-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Axiforma/Axiforma-Regular.woff') format('woff'),
+		url('../fonts/Axiforma/Axiforma-Regular.woff2') format('woff2'),
+      url('../fonts/Axiforma/Axiforma-Regular.ttf') format('truetype');
+   font-weight: 400;
+   font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+   font-family: 'Axiforma';
+   src: url('../fonts/Axiforma/Axiforma-Medium.eot');
+   src: local('Axiforma'), local('Axiforma-Medium'),
+      url('../fonts/Axiforma/Axiforma-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Axiforma/Axiforma-Medium.woff') format('woff'),
+		url('../fonts/Axiforma/Axiforma-Medium.woff2') format('woff2'),
+      url('../fonts/Axiforma/Axiforma-Medium.ttf') format('truetype');
+   font-weight: 500;
+   font-style: normal;
+	font-display: fallback;
+}
+
+@font-face {
+   font-family: 'Axiforma';
+   src: url('../fonts/Axiforma/Axiforma-Bold.eot');
+   src: local('Axiforma'), local('Axiforma-Bold'),
+      url('../fonts/Axiforma/Axiforma-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/Axiforma/Axiforma-Bold.woff') format('woff'),
+		url('../fonts/Axiforma/Axiforma-Bold.woff2') format('woff2'),
+      url('../fonts/Axiforma/Axiforma-Bold.ttf') format('truetype');
+   font-weight: 700;
+   font-style: normal;
+	font-display: fallback;
+}

@@ -1,0 +1,88 @@
+// TODO Container
+
+@mixin container (
+   $margin: 0 auto,
+   $padding: 0 25px,
+   $maxWidth: 1400px,
+
+   $flex: false,
+   $alignX: space-between,
+   $alignY: center,
+
+   $grid: false,
+   $columns: auto,
+   $rows: auto,
+   
+   $gap: 15px
+) {
+   margin: $margin;
+   padding: $padding;
+   max-width: $maxWidth;
+
+   @if ($flex) {
+      display: flex;
+      justify-content: $alignX;
+      align-items: $alignY;
+      gap: 15px
+   }
+
+   @if ($grid) {
+      display: grid;
+      grid-template-columns: $columns;
+      grid-template-rows: $rows;
+      gap: $gap;
+   }
+
+   @media all and (max-width: 450px) {
+      padding: 0 20px;
+   }
+}
+.ui-container { @include container }
+.ui-container.container--flex { @include container($flex: true) }
+
+
+
+// TODO Button
+@mixin button (
+   $padding: 16px 50px,
+   $fFamily: $titleFont,
+   $fSize: 18px,
+   $fWeight: 400,
+   $lHeight: 100%,
+   $color: var(--btnColor1),
+   $bg: transparent,
+   $border: 1px solid var(--scrollbar),
+   $btnRd: $buttonRd,
+   $transition: all .2s ease,
+) {
+   padding: $padding;
+   font-family: $fFamily;
+   font-size: $fSize;
+   font-weight: $fWeight;
+   line-height: $lHeight;
+   color: $color;
+   background: $bg;
+   border: $border;
+   border-radius: $btnRd;
+   transition: $transition;
+   leading-trim: both;
+   text-edge: cap;
+}
+
+.btn--1 {
+   @include button;
+   &:hover {
+      color: var(--light);
+      background: var(--btnColor1);
+      border: 1px solid var(--btnColor1);
+   }
+}
+
+.btn--2 {
+   @include button( $color: var(--btnColor2) );
+   &:hover {
+      color: var(--light);
+      background: var(--btnColor2);
+      border: 1px solid var(--btnColor2);
+   }
+}

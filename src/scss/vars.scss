@@ -1,0 +1,28 @@
+// Fonts
+$titleFont: 'Axiforma', sans-serif;
+$textFont: 'Axiforma', sans-serif;
+$decorFont: 'Axiforma', sans-serif;
+
+
+// Colors
+
+:root {
+   --light: #fff;
+   --text: #8C8A95;
+   --action: #FF1544;
+   --dark_bg: #100F14; 
+   --btnColor1: #FFBD2E;
+   --btnColor2: #01CBA3;
+   --scrollbar: #232228;
+}
+
+
+// Shadows
+$btnActionS: 0px 8px 30px -13px rgba(169, 12, 52, 0.7);
+
+// Gradients
+$cardColorG: linear-gradient(180deg, rgba(242, 24, 79, 0) 40.54%, rgba(242, 24, 79, 0.3) 100%);
+
+
+// VARS Radius
+$buttonRd: 50px;

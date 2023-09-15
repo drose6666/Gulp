@@ -1,0 +1,33 @@
+.benefits {
+   margin-top: 80px;
+   max-width: 1130px;
+   display: grid;
+   grid-template: auto / 1fr 1fr;
+   gap: 60px;
+
+   &-list {
+      li {
+         font-size: 15px;
+         font-weight: 400;
+         line-height: 140%;
+         color: var(--text);
+         display: flex;
+         align-items: flex-start;
+         gap: 10px;
+
+         &::before {
+            display: inline-block;
+            content: url(../../../img/icons/check.svg) ;
+         }
+         &:not(:last-child) {
+            margin-bottom: 15px;
+         }
+      }
+   }
+
+   @media all and (max-width: 640px) {
+      grid-template: 1fr / 1fr;
+      gap: 15px;
+   }
+}
+

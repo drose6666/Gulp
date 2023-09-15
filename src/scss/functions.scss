@@ -1,0 +1,12 @@
+// TODO Вычисление Font Size
+/* 
+   VARS 
+   $currentWidth - текущая ширина, с которой начинается изменение
+   $targetWidth - целевая ширина, на которой изменения заканчиваются
+   $currentFont - текущий размер шрифта - значение, с которого изменяется шрифт
+   $targetFont - целевой размер шрифа, значение до которого изменяется шрифт
+*/
+
+@function calcSize ($currentWidth, $targetWidth, $currentFont, $targetFont) {
+   @return calc((100vw - #{$targetWidth}px) / (#{$currentWidth} - #{$targetWidth}) * (#{$currentFont} - #{$targetFont}) + #{$targetFont}px)
+}

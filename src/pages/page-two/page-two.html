@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('../../components/head/head.html', {
+      "mainCss": "css/page-two.min.css",
+      "title": "Page Two"
+   })
+<body>
+
+   <main>
+      @@include('../../components/titles/page-title.html', {
+         "title": "Page Two"
+      })
+
+      <div class="nav-links">
+         @@include('../../components/ui/ui-button/ui-button.html', {
+            "className": "btn--2",
+            "link": "/",
+            "text": "Back to home"
+         })
+      </div>
+
+      @@include('../../components/socials/socials.html')
+   </main>
+   
+   <script src="js/bundle-page-two.min.js"></script>
+</body>
+</html>

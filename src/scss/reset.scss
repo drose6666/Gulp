@@ -1,0 +1,15 @@
+* {
+   box-sizing: border-box;
+}
+
+button {
+   border: none;
+   background: transparent;
+   &:active, &:focus {
+      border: none;
+   }
+}
+
+a, a:active, a:focus, a:hover {
+   text-decoration: none;
+}

@@ -1,0 +1,27 @@
+.tech-wrap {
+   display: inline-flex;
+   align-items: flex-end;
+   gap: 80px;
+}
+
+.tech-link {
+   display: inline-block;
+   img {
+      max-width: 120px;
+      max-height: 190px;
+   }
+   &.js--link {
+      margin-bottom: 5px;
+   }
+}
+
+@media all and (max-width: 400px) {
+   .tech-wrap {
+      gap: 40px;
+   }
+
+   .tech-link img {
+      max-width: 90px;
+      max-height: 130px;
+   }
+}

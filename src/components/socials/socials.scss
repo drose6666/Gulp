@@ -1,0 +1,18 @@
+.socials {
+   margin-top: 100px;
+   display: inline-flex;
+   align-items: center;
+   gap: 20px;
+
+   &-item {
+      display: inline-block;
+      transition: all .2s ease;
+      img {
+         max-height: 20px;
+      }
+
+      &:hover {
+         transform: translateY(-3px);
+      }
+   }
+}

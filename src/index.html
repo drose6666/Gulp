@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+   @@include('./components/head/head.html', {
+      "mainCss": "./pages/index/css/index.min.css",
+      "title": "Main Page"
+   })
+<body>
+
+   <main>
+      @@include('./pages/index/tech-links/tech-links.html')
+      @@include('./components/titles/page-title.html', {
+         "title": "Multi Page Markup"
+      })
+
+      <p class="page-subtitle">This is the starting build of Gulp 4 and Vanilla JS for the <strong>markup of multi-page websites</strong> without additional frameworks, such as Vue, React and others.</p>
+   
+      <div class="nav-links">
+         @@loop('./components/ui/ui-button/ui-button.html', [
+            { "text": "Page 1", "className": "btn--1", "link": "./pages/page-one/page-one.html" },
+            { "text": "Page 2", "className": "btn--2", "link": "./pages/page-two/page-two.html" }
+         ])
+      </div>
+
+      <div class="benefits">
+         <ul class="benefits-list">
+            @@loop('./pages/index/benefit-list-item/benefit-list-item.html', [
+               { "text":  "Autoprefixer" },
+               { "text":  "Creating a zip-archive of the production folder" },
+               { "text":  "Convenient and intuitive file structure" },
+               { "text":  "Easy addition of new pages" },
+               { "text":  "Component approach at the HTML level" },
+            ])
+         </ul>
+
+         <ul class="benefits-list">
+            @@loop('./pages/index/benefit-list-item/benefit-list-item.html', [
+               { "text":  "HTML fragmentation - creating reusable pieces of code" },
+               { "text":  "SCSS preprocessor for style" },
+               { "text":  "Image minimization + format conversion .jpg, .jpeg, .png in .webp" },
+               { "text":  "The ability to use modules in JS (import/export)" },
+               { "text":  "Creating minified js/css bundles for each individual page" },
+            ])
+         </ul>
+      </div>
+
+      @@include('./components/socials/socials.html')
+   </main>
+   
+   <script type="module" src="./pages/index/js/bundle-index.min.js"></script>
+</body>
+</html>
